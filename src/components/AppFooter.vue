@@ -63,7 +63,7 @@ export default {
     min-height: 500px;
     padding-left: 250px;
     background-image: url('../assets/img/footer-bg.jpg');
-    align-items: center;
+    padding-top: 50px;
 }
 
 a {
