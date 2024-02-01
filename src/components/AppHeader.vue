@@ -20,7 +20,6 @@ export default {
                 <li><a href="#">COLLECTIBLES</a></li>
                 <li><a href="#">VIDEOS</a></li>
                 <li><a href="#">FANS</a></li>
-                <li><a href="#">VIDEOS</a></li>
                 <li><a href="#">NEWS</a></li>
                 <li><a href="#">SHOP</a></li>
             </ul>
@@ -29,7 +28,7 @@ export default {
     </header>
 </template>
 
-<style>
+<style scoped>
 a {
     text-decoration: none;
     color: black;
@@ -56,6 +55,6 @@ li {
 }
 
 .logo-section {
-    padding-right: 250px;
+    padding-left: 250px;
 }
 </style>
