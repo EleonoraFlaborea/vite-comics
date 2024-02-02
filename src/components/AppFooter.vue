@@ -57,7 +57,7 @@ export default {
     </nav>
 </template>
 
-<style>
+<style lang="scss">
 .footer-container {
     display: flex;
     min-height: 500px;

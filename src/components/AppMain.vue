@@ -1,27 +1,44 @@
 <script >
+import AppCard from './AppCard.vue';
 export default {
-    name: 'AppMain'
-}
+    name: 'AppMain',
+    props: {
+        products: Array
+    },
+    components: { AppCard }
+};
 </script>
 
 <template>
     <!--MAIN-->
     <main>
-        <section class="main-section">
-            <h3> Content goes here </h3>
+        <section class="main-section" id="products">
+            <AppCard />
         </section>
     </main>
 </template>
 
-<style>
+<style lang="scss" scoped>
 .main-section {
     background-color: #1C1C1C;
     min-height: 150px;
     color: white;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 
+
+
+    figure {
+        flex-basis: calc(100% / 6);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        p {
+            flex-basis: 70%;
+        }
+    }
 }
 </style>

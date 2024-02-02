@@ -28,7 +28,7 @@ export default {
     </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 a {
     text-decoration: none;
     color: black;
@@ -55,6 +55,6 @@ li {
 }
 
 .logo-section {
-    padding-left: 250px;
+    padding-right: 200px;
 }
 </style>
