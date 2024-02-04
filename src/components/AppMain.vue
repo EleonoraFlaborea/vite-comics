@@ -13,7 +13,7 @@ export default {
     <!--MAIN-->
     <main>
         <section class="main-section" id="products">
-            <AppCard />
+            <AppCard v-for="(product, i) in  products " :key="i" :product="product" />
         </section>
     </main>
 </template>
@@ -30,7 +30,7 @@ export default {
 
 
 
-    figure {
+    div {
         flex-basis: calc(100% / 6);
         display: flex;
         justify-content: center;

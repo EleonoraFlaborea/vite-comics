@@ -2,26 +2,37 @@
 export default {
     name: 'AppCard',
     props: {
-        products: Object
+        product: Object
     }
 };
 </script>
 
 <template>
-    <section class="main-section" id="products">
-        <AppCard v-for="(product, i) in products" />
-    </section>
+    <div>
+        <figure>
+            <img :src="product.thumb" :alt="product.series">
+        </figure>
+        <div class="title">
+            <p>{{ product.price }}</p>
+            <p>{{ product.series }}</p>
+            <p>{{ product.type }}</p>
+        </div>
+
+
+    </div>
 </template>
 
 <style lang="scss" scoped>
-figure {
-    flex-basis: calc(100% / 6);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+img {
+    width: 100%;
+}
 
-    p {
-        flex-basis: 70%;
-    }
+div {
+    padding: 20px 0;
+}
+
+figure {
+    width: 150px;
+    height: 150px;
 }
 </style>

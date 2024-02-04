@@ -103,7 +103,7 @@ export default {
 
 <template>
     <AppHeader />
-    <AppMain />
+    <AppMain :products="products" />
     <AppFooter />
 </template>
 
